@@ -25,7 +25,8 @@
 
 			;; snip
 			{1 :L3MON4D3/LuaSnip
-		     :vresion "v2.*"}
+		     :vresion "v2.*"
+			 :dependencies ["rafamadriz/friendly-snippets"]}
             {1 :saadparwaiz1/cmp_luasnip}
 
             {1 :folke/tokyonight.nvim

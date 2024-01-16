@@ -2,7 +2,8 @@
 
 (fn M.config []
   (let [cmp (require :cmp)
-			luasnip (require :luasnip)]
+		luasnip (require :luasnip)
+		snippets (require :luasnip.loaders.from_vscode)]
 	(let [opt {
 	  :mapping
 	  {
@@ -35,6 +36,7 @@
 	   {:name "buffer"}
 	   {:name "nvim_lua"}
 	   {:name "path"}]}]
+    (snippets.lazy_load)
 	(cmp.setup opt))))
 
 M
