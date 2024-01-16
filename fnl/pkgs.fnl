@@ -9,13 +9,17 @@
 	       {1 :altermo/ultimate-autopair.nvim
 		    :config (. (require :config.autopair) :config)
 			:event [:InsertEnter :CmdlineEnter]}
+		   {1 :nvim-treesitter/nvim-treesitter
+		    :config (. (require :config.treesitter) :config)}
 
 			;; cmp
-            {1 :neovim/nvim-lspconfig}
+            {1 :neovim/nvim-lspconfig
+			 :config (. (require :config.lsp) :config)}
             {1 :hrsh7th/cmp-nvim-lsp}
             {1 :hrsh7th/cmp-buffer}
             {1 :hrsh7th/cmp-path}
             {1 :hrsh7th/cmp-cmdline}
+			{1 :hrsh7th/cmp-nvim-lsp}
             {1 :hrsh7th/nvim-cmp
 			 :config (. (require :config.cmp) :config)}
 
@@ -23,6 +27,9 @@
 			{1 :L3MON4D3/LuaSnip
 		     :vresion "v2.*"}
             {1 :saadparwaiz1/cmp_luasnip}
+
+            {1 :folke/tokyonight.nvim
+		    :config (. (require :config.tokyonight) :config)}
 	      ]
       opts {
         :performance {
