@@ -29,6 +29,10 @@
 			 :dependencies ["rafamadriz/friendly-snippets"]}
             {1 :saadparwaiz1/cmp_luasnip}
 
+			;; cool lsp stuff
+			{1 :ErichDonGubler/lsp_lines.nvim
+			 :config (. (require :config.lsp_lines) :config)}
+
             {1 :folke/tokyonight.nvim
 		    :config (. (require :config.tokyonight) :config)}
 	      ]

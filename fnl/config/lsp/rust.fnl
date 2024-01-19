@@ -1,3 +1,4 @@
-(fn config [])
+(fn config []
+  )
 
 {: config}
