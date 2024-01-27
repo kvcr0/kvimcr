@@ -34,7 +34,10 @@
 			 :config (. (require :config.lsp_lines) :config)}
 
             {1 :folke/tokyonight.nvim
-		    :config (. (require :config.tokyonight) :config)}
+		     :config (. (require :config.tokyonight) :config)}
+
+			{1 :numToStr/Comment.nvim
+			 :config (. (require :config.comment) :config)}
 	      ]
       opts {
         :performance {

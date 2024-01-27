@@ -5,6 +5,7 @@
 		  :fennel_ls (. (require :config.lsp.fennel) :config)
 		  :rust_analyzer (. (require :config.lsp.rust) :config)
 		  :clangd (. (require :config.lsp.clangd) :config)
+		  :csharp_ls (. (require :config.lsp.csharp) :config)
         }]
   (each [name conf (pairs servers)]
 	;;(conf)
