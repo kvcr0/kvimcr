@@ -6,10 +6,11 @@
 		  :rust_analyzer (. (require :config.lsp.rust) :config)
 		  :clangd (. (require :config.lsp.clangd) :config)
 		  :csharp_ls (. (require :config.lsp.csharp) :config)
+		  :yamlls (. (require :config.lsp.yaml) :config)
         }]
   (each [name conf (pairs servers)]
-	;;(conf)
-	(let [server (. lsp name)]
-	  (server.setup {: capabilities})))))
+    ;;(conf)
+    (let [server (. lsp name)]
+      (server.setup {: capabilities})))))
 
 {: config}
