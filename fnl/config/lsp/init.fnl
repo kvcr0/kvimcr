@@ -7,6 +7,7 @@
 		  :clangd (. (require :config.lsp.clangd) :config)
 		  :csharp_ls (. (require :config.lsp.csharp) :config)
 		  :yamlls (. (require :config.lsp.yaml) :config)
+		  :nil_ls (. (require :config.lsp.nil) :config)
         }]
   (each [name conf (pairs servers)]
     ;;(conf)
